@@ -1,0 +1,25 @@
+version: '3.7'
+services:
+    db :
+        image: mysql
+        volumes: 
+            - db_data:/var/lib/mysql/
+        environment: 
+            MYSQL_ROOT_PASSWORD: password
+        expose: 
+            - 3306
+    scripts :
+        build:
+            context: .
+        image: mom2db
+    phpmyadmin :
+        image: phpmyadmin
+        environment: 
+            - PMA_ARBITRARY=1
+            - PMA_HOST=db
+            - PMA_PORT=3306
+        ports: 
+            - 8899:80
+
+volumes: 
+    db_data:
