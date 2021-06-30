@@ -1,1 +1,1 @@
-# It might take a little longer than usual but it works completely fine if tried after a particular process where preparing the socket and server with 3306 port is over. Trying to login to MySQL before that process might return an error.
+# It might take a little longer than usual but it works completely fine if tried after a particular process of preparing the socket and server with 3306 port is over. Trying to login to MySQL before that process might return an error.
