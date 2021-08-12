@@ -12,8 +12,6 @@ services:
         build:
             context: .
         image: mom2db
-        volumes:
-            - data:.
     phpmyadmin :
         image: phpmyadmin
         environment: 
@@ -27,4 +25,3 @@ services:
 
 volumes: 
     db_data:
-    data:
